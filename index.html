@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>유레카 2조</title>
     <link href="index.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -13,7 +14,7 @@
             <a href="joinus/joinus.html" class="joinBtn">우리 조에 함께 할래?</a>
         </header>
         <main class="main">
-            <h1>< 우리는 2조 입니다 ></h1>
+            <h1><span id="typed-text"></span></h1>
             <div class="mid">
                 <div class="explainBox">
                     <h3>[우리 팀만의 특징 및 목표]</h3>
@@ -80,5 +81,18 @@
             </div>
         </main>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            new Typed("#typed-text", {
+                strings: ["&lt; 우리는 2조 입니다 &gt;"],
+                typeSpeed: 150,
+                backSpeed: 0,
+                startDelay: 500,
+                showCursor: false,
+                loop: false
+            });
+        });
+    </script>
 </body>
 </html>
