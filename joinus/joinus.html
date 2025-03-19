@@ -8,6 +8,73 @@
   <link rel="stylesheet" href="joinus.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <title>Join Us</title>
+  <style>
+    .container {
+      max-width: 1100px;
+    }
+
+    .title {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .team-table {
+      border-collapse: collapse;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 20px;
+    }
+
+    .team-table th {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+    }
+
+    .team-table td {
+      padding: 12px 15px;
+      text-align: center;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .team-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .team-table tr:hover {
+      background-color: #c8ced1;
+    }
+
+    .badge-leader {
+      background-color: black;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 12px;
+    }
+
+    .badge-member {
+      background-color: #6c757d;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 12px;
+    }
+
+    .row {
+      margin-top: 40px;
+    }
+
+    .card {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  </style>
 </head>
 
 <body>
@@ -16,58 +83,7 @@
 
     <div class="row mt-4">
       <!-- 왼쪽: 조원 목록 -->
-      <div class="col-md-6">
-        <style>
-          .team-table {
-            border-collapse: collapse;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-            width: 100%;
-            max-width: 500px;
-          }
-
-          .team-table th {
-            background-color: #4e73df;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-weight: bold;
-          }
-
-          .team-table td {
-            padding: 12px 15px;
-            text-align: center;
-            border-bottom: 1px solid #e9ecef;
-          }
-
-          .team-table tr:last-child td {
-            border-bottom: none;
-          }
-
-
-
-          .team-table tr:hover {
-            background-color: #c8ced1;
-          }
-
-          .badge-leader {
-            background-color: #4e73df;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 15px;
-            font-size: 12px;
-          }
-
-          .badge-member {
-            background-color: #6c757d;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 15px;
-            font-size: 12px;
-          }
-        </style>
-
+      <div class="col-md-5">
         <table class="team-table">
           <thead>
             <tr>
@@ -105,7 +121,7 @@
       </div>
 
       <!-- 오른쪽: 가입 폼 -->
-      <div class="col-md-6">
+      <div class="col-md-7">
         <div class="card shadow p-4">
           <h5 class="card-title text-center fw-bold">가입 신청</h5>
           <form id="registerForm">
@@ -184,7 +200,8 @@
       });
     });
   </script>
-      <script src="../gototeam.js"></script>
+
+  <script src="../gototeam.js"></script>
 
 </body>
 
